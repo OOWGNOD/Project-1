@@ -1,0 +1,224 @@
+@import url(common.css);
+
+.ctt-1{
+}
+.ctt-1 .bg_img{
+    width:100%;
+    height:800px;
+    background: url("../img/photo-1.jpg") fixed no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.ctt-1 .bg_img .bg_img-right{
+    position: absolute;
+    right:5%;
+    top: 25%;
+    width:40%;
+
+}
+.ctt-1 .bg_img .bg_img-right > p .drink1{
+    width:70%;
+}
+
+.ctt-1 .bg_img .bg_img-left{
+    position: absolute;
+    left: 13%;
+    top:25%;
+    padding-top: 55px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 60px;
+}
+.ctt-1 .bg_img .bg_img-left > p > img{
+    width:70%;
+}
+
+.ctt-1 > div > img {
+}
+.ctt-1 .bg_img .bg_img-left .text1{
+    margin:20px 0 20px 0;
+}
+.ctt-1 > div > nav > p {
+    width:100%;
+}
+.ctt-1 > div > nav > p > a{
+    display:inline-block;
+    font-size:1.5rem;
+    color:#4c4343;
+    border:solid #4c4343 2px;
+    border-radius: 20px;
+    padding:0 5% 0 5%;
+    font-weight: 800;
+
+}
+.ctt-1 > div > nav > p > a:hover{
+    background:#4c4343;
+    color:#f6f5ef;
+    text-decoration: underline;
+
+}
+    
+
+/* event bd */
+.event-bd{
+    width:100%;
+    margin:120px 0px 120px 0px;
+
+}
+.event-bd .event-1{
+    display:flex;
+    width:66.66666%;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+}
+.event-bd > div .evt-txt{
+    text-align: center;
+    font-size:2rem;
+    color:rgb(175,31,57);
+}
+.event-bd > div .evt-underbox{
+    border:2px solid #959595;
+    padding:5px 20px 5px 20px;
+    margin-top:20px;
+    color:#959595;
+    border-radius: 20px;
+    font-size:12px;
+}
+.event-bd > div .evt-underbox:hover{
+    color:#f6f5ef;
+    background: #959595;
+}
+
+.event-1 > ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.event-1 > ul > li{
+}
+.event-1 > ul > li > a {}
+.event-1 > ul > li > a > img {
+
+    width:80%;
+    margin:60px 30px;
+}
+
+/* fav */
+.favwarp{
+    background:url("../img/stk_bg.jpg") transparent center center fixed no-repeat;
+    background-size:cover;
+    height:1560px;
+    width:100%;
+    
+}
+.favwarp-box{
+    display:block;
+    background:white;
+    width:100%;
+    height:680px;
+
+}
+.favwarp-box .favwarp-inner{
+
+    width:66.66%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+    padding:90px 0 30px 0;
+}
+.favwarp > div > nav .fav-img-txt{
+    text-align: center;
+    line-height: 60px;
+}
+.favwarp > div > nav .fav-txt1{
+    letter-spacing: 10px;
+    font-weight: bold;
+    color:#331515;
+    font-size: 24px;
+}
+.favwarp > div > nav .fav-txt2{
+    letter-spacing:12px;
+    font-weight: lighter;
+    color:#292f4e;
+}
+.favwarp > div > ul{
+    display:flex;
+    justify-content: space-between;
+    width:70%;
+    margin:0 auto;
+    text-align: center;
+}
+.favwarp > div > ul > li{
+}
+.favwarp > div > ul > li .fav-img-txt{
+    font-size:18px;
+    font-weight: bold;
+    color:#331515;
+    line-height: 60px;
+}
+.favwarp > div > ul > li .fav_link1{
+    font-size:16px;
+    font-weight: 700;
+    color:#331515;
+    padding:5px 20px 5px 20px;
+    border:2px solid #331515;
+    border-radius: 20px;
+}
+.favwarp > div > ul > li .fav_link1:hover{
+    background:#331515;
+    color:#f6f5ef;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.favwarp > div > ul > li >img{
+    width:233px;
+    height:217px;
+}
+/* srch st */
+.favwarp .srch_st{
+    height:200px;
+    position:relative;
+    top:680px;
+}
+.favwarp .srch_st .srch-bg{
+    height:200px;
+    width:50%;
+    display:flex;
+    margin:0 auto;
+}
+
+.favwarp .srch_st .srch_st-inner > span{
+    position:relative;
+    left:30%;
+    bottom:150px;
+    display:inline-block;
+    color:#f6f5ef; 
+    font-size: 14px;
+    line-height: 24px;
+}
+.favwarp .srch_st .srch_st-inner > span .st_link{
+    color:#f6f5ef;
+    padding : 5px 15px 5px 15px;
+    border: 2px solid #f6f5ef;
+    border-radius: 10px;
+    line-height: 50px;
+}
+.favwarp .srch_st .srch_st-inner > span .st_link:hover{
+    background:#f6f5ef;
+    color:#4c4343;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+

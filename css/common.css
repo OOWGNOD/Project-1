@@ -1,0 +1,233 @@
+@charset "utf-8";
+html,body{
+    margin: 0;
+}
+html {
+    height: 100%;
+    }
+body {
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    }
+
+ul,li,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,figure,p{
+    margin: 0;
+}
+
+img{
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 11px;
+    color: #555;
+}
+header{
+    position:fixed;
+    width:100%;
+    background-color:#f6f5ef;
+    z-index: 999;
+    
+}
+header > div {
+    margin:0 auto;
+    width:66.66%;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header > div > h1 {padding:30px 0; }
+header > div > h1 > img{}
+header > div > nav { }
+header > div > nav > a > img {
+    display:none;
+}
+header > div > nav > ul{text-align:right;}
+header > div > nav > ul > li { display:inline-block;}
+header > div > nav > ul > li a{display:block;}
+header > div > nav > ul > li > a >img {
+     width:50px;
+    height:50px;
+    display:none;
+}
+
+
+
+
+header > div .spot { }
+header > div .spot li {  }
+header > div .spot li a {
+    font-size:14px; 
+    color:#333; 
+    margin: 0 10px;
+}
+
+
+header > div .spot2 {margin-top:20px; }
+header > div .spot2 li{
+    position: relative;
+    margin:0 40px;
+}
+header > div .spot2 li > a { 
+    font-size:20px; 
+    color:#333;
+    padding:10px 10px 30px 10px;
+}
+header > div .spot2 li:last-child { margin-right:0;}
+header > div .spot2 li div{
+    position: absolute;
+    z-index:99;
+    left:0; bottom:0px; 
+    width:100%;
+    text-align: center;
+    transform: translateY(100%);
+    padding:10px 0;
+    display:none;
+}
+header > div .spot2 li div a{
+    padding:6px 0;
+    white-space: nowrap;
+    color : #f6f5ef;
+    font-size:16px;
+}
+header::after{
+    content:'';
+    width:100%; height:158px;
+    position:absolute;
+    left:0; bottom:0;
+    background-color:rgba(35,24,21,1);
+    transform: translateY(100%);
+    display:none;
+}
+/* footer */
+footer .ft-box{
+    width:100%;
+    height:200px;
+    background: #2c2a29
+}
+footer .ft-box .ft-inner{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px 0px 50px;
+    line-height: 24px;
+}
+
+footer .ft-box > nav > span{
+    text-align: center;
+    font-size:14px;
+    color:#959595;
+}
+
+/* hover */
+header > div .spot2 li > a:hover {background:rgba(35,24,21,1);
+color:rgb(175,31,57); text-decoration: underline;} /* 주메뉴배경 */
+header:hover::after{ display:block;} /* 서브메뉴배경 */
+header > div .spot2:hover li div{display:block;} /* 서브메뉴 */
+
+/* 
+    모든 문서 공통으로 들어감
+    common.css (공통문서)
+ */
+
+ /* media 960 */
+@media screen and (max-width:960px){
+    header > div { width:100%;
+        align-items: center;
+    }
+    header > div > h1{
+        margin-left:20px;
+    }
+    header > div > h1 > a > img {
+        width:146px;
+        height:49px;
+    }
+    header > div > nav > ul > li{
+        display:none;
+    }
+    header > div > nav > a > img {
+        display:block;
+        width: 40px;
+        height:40px;
+        margin-right:20px;
+        top:0;
+    }
+    header .spot2{
+        display:none;
+    }
+header > div .spot2:hover li div{display:none;}
+header > div .spot2 li > a:hover {display:none;}
+header:hover::after{ display:none;}
+}
+
+
+
+/* media 1311 */
+@media screen and (max-width:1311px){
+    header > div > h1 > a > img {
+        width:146px;
+        height:49px;
+    }
+
+
+    header > div .spot li a {
+        font-size: 14px;
+    }
+    
+    header > div .spot2 li > a {
+        font-size:16px;
+        margin:0 5px;
+    }
+}
+
+
+
+/* media 1045 */
+@media screen and (max-width:1045px){
+    header > div > h1 > a > img {
+        width:146px;
+        height:49px;
+    }
+
+
+    header > div .spot li a {
+        font-size: 12px;
+    }
+    
+    header > div .spot2 li > a {
+        font-size:14px;
+        margin:0 5px;
+    }
+}
+
+
+
+/* media 999 */
+@media screen and (max-width:999px){
+    header > div > h1 > a > img {
+        width:146px;
+        height:49px;
+    }
+
+
+    header > div .spot li a {
+        font-size: 11px;
+    }
+    
+    header > div .spot2 li > a {
+        font-size:12px;
+        margin:0 5px;
+    }
+}

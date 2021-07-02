@@ -1,0 +1,230 @@
+@import url(common.css);
+.ctt-1{
+    margin-top:50px;
+    height:85%;
+    background: url("../img/photo-1.jpg") #fff no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.ctt-1 .bg_img{
+    width:100%;
+}
+.ctt-1 .bg_img .bg_img-right{
+    position: absolute;
+    display:flex;
+    justify-content: space-around;
+    right:100px;
+    top:0px;
+    width:40%;
+
+}
+.ctt-1 .bg_img .bg_img-left{
+    position: absolute;
+    left: 13%;
+    width: 40%;
+    top:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.ctt-1 > div > img {
+}
+.ctt-1 > div > nav > p .drink1{
+    width: 85%;
+    transform: translateY(33%);
+}
+/* .ctt-1 > div > nav > p .drink2{
+    width:20%;
+}
+.ctt-1 > div > nav > p .dr-txt1{} */
+
+.ctt-1 .bg_img .bg_img-left .text1{
+    margin:20px 0 20px 0;
+}
+.ctt-1 > div > nav > p > a{
+    display:inline-block;
+    font-size:16px;
+    color:#4c4343;
+    border:solid #4c4343 2px;
+    border-radius: 20px;
+    padding:0px 15px 0px 15px;
+    font-weight: 800;
+
+}
+.ctt-1 > div > nav > p > a:hover{
+    background:#4c4343;
+    color:#f6f5ef;
+    text-decoration: underline;
+
+}
+
+.ctt-1 .next-bx{
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    top:58%;
+    margin-top:-54px;
+}
+.ctt-1 .next-bx .prev .next-l{
+    left:30px;
+    width:50px;
+    margin-left:20px;
+}
+.ctt-1 .next-bx .next .next-r{
+    right:30px;
+    width:50px;
+    transform:rotate(180deg);
+    margin-right:20px;
+
+}
+.ctt-1 .next-bx .prev .next-l:hover{
+    filter: invert(100%);
+}
+.ctt-1 .next-bx .next .next-r:hover{
+    filter: invert(100%);
+}
+.drk-bg-box-01{
+    width:100%;
+    height:280px;
+    align-items: center;
+    
+}
+
+.drk-bg-box-01 .drk-bg-01{
+    margin:0 auto;
+    width:66.66%;
+    margin-top:100px;
+    background:url(../img/drp-bg-01.jpg) no-repeat;
+    background-size: contain;
+    height:280px;
+    line-height: 40px;
+}
+.drk-bg-box-01 .drk-bg-01 > p{
+    position:relative;
+    top:20%;
+    left:55%;
+    color:#f6f5ef;
+    font-size: 20px;  
+}
+.drk-bg-box-01 .drk-bg-01 > a{
+    border:2px solid #f6f5ef;
+    padding:5px 10px 5px 10px;
+    position:relative;
+    top:20%;
+    left:55%;
+    color:#f6f5ef;
+    font-size: 12px;  
+}
+/* menu box */
+.menu-bx-01{
+    width:100%;
+}
+.menu-bx-01 > ul{
+    display:flex;
+    width:66.66%;
+    margin:0 auto;
+    margin-top:100px;
+}
+.menu-bx-01 > ul > li{
+    display:flex;
+    flex-direction: column;
+    margin-right:30px;
+}
+.menu-bx-01 > ul > li > a{
+    padding:0;
+}
+
+.menu-bx-01 > ul > li > a > img{
+    width:250px;
+    height:250px;
+}
+.menu-bx-01 > ul > li .menu-name{
+    display:block;
+    padding-top:18px;
+    font-size:20px;
+
+}
+.menu-bx-01 > ul > li > p{
+    display:block;
+    font-size:12px;
+    line-height:28px;
+}
+.drk-bg-box-02{
+    width:100%;
+    height:280px;
+    align-items: center;
+    
+}
+
+.drk-bg-box-02 .drk-bg-02{
+    margin:0 auto;
+    width:66.66%;
+    margin-top:100px;
+    background:url(../img/drp-bg-02.jpg) no-repeat;
+    background-size: contain;
+    height:280px;
+    line-height: 40px;
+}
+.drk-bg-box-02 .drk-bg-02 > p{
+    position:relative;
+    top:20%;
+    left:5%;
+    color:#4c4343;
+    font-size: 20px;  
+}
+.drk-bg-box-02 .drk-bg-02 > a{
+    border:2px solid #4c4343;
+    padding:5px 10px 5px 10px;
+    position:relative;
+    top:20%;
+    left:5%;
+    color:#4c4343;
+    font-size: 12px;  
+}
+.menu-bx-02{
+    width:100%;
+}
+.menu-bx-02 > ul{
+    display:flex;
+    width:66.66%;
+    margin:0 auto;
+    margin-top:100px;
+}
+.menu-bx-02 > ul > li{
+    display:flex;
+    flex-direction: column;
+    margin-right:30px;
+}
+.menu-bx-02 > ul > li > a{
+    padding:0;
+}
+
+.menu-bx-02 > ul > li > a > img{
+    width:250px;
+    height:250px;
+}
+.menu-bx-02 > ul > li .menu-name2{
+    display:block;
+    padding-top:18px;
+    font-size:20px;
+
+}
+.menu-bx-02 > ul > li > p{
+    display:block;
+    font-size:12px;
+    line-height:28px;
+    padding-bottom:200px;
+}
+/* hover */
+.drk-bg-box-01 .drk-bg-01 > a:hover{
+    background:#f6f5ef;
+    color:black;
+}
+.drk-bg-box-02 .drk-bg-02 > a:hover{
+    background:#4c4343;
+    color:#f6f5ef;
+}
