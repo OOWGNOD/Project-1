@@ -209,7 +209,7 @@
     border-radius: 10px;
     line-height: 50px;
 }
-.favwarp .srch_st .srch_st-inner > span .st_link:hover{
+.favwarp .srch_st .srch_st-inner > a:hover{
     background:#f6f5ef;
     color:#4c4343;
     text-decoration: underline;
