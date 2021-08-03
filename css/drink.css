@@ -1,41 +1,45 @@
 @import url(common.css);
-.ctt-1{
+.ctt-2{
     top:100px;
     height:840px;
-
-}
-.ctt-1 .bg_img{
     width:100%;
-    height:800px;
+}
+.ctt-2 .bg_img{
+    /* width:100%; */
+    height:100%;
+}
+.ctt-2 .bg_img2{
+    /* width:100%; */
+    height:100%;
 }
 .drk-bg-box-01{
-    width:100%;
-    height:280px;
-    align-items: center;
-    
+    margin-top:200px;
+    position:relative;
 }
 
 .drk-bg-box-01 .drk-bg-01{
-    margin:0 auto;
+    align-items: center;
+    margin:auto;
     width:66.66%;
-    margin-top:100px;
     background:url(../img/drp-bg-01.jpg) no-repeat;
     background-size: contain;
     height:280px;
-    line-height: 40px;
+    line-height: 30px;
 }
 .drk-bg-box-01 .drk-bg-01 > p{
-    position:relative;
+    position:absolute;
+    display:flex;
+    flex-direction:column;
     top:20%;
     left:55%;
     color:#f6f5ef;
     font-size: 20px;  
 }
 .drk-bg-box-01 .drk-bg-01 > a{
+    position:absolute;
     border:2px solid #f6f5ef;
-    padding:5px 10px 5px 10px;
-    position:relative;
-    top:20%;
+    padding:0px 10px 0px 10px;
+    top:50%;
     left:55%;
     color:#f6f5ef;
     font-size: 12px;  
@@ -46,22 +50,26 @@
 }
 .menu-bx-01 > ul{
     display:flex;
-    width:66.66%;
-    margin:0 auto;
+    width:69%;
+    margin:auto;
     margin-top:100px;
+
 }
 .menu-bx-01 > ul > li{
     display:flex;
     flex-direction: column;
-    margin-right:30px;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
 }
 .menu-bx-01 > ul > li > a{
     padding:0;
 }
 
 .menu-bx-01 > ul > li > a > img{
-    width:250px;
+    width:100%;
     height:250px;
+    padding:10px;
 }
 .menu-bx-01 > ul > li .menu-name{
     display:block;
@@ -118,7 +126,9 @@
 .menu-bx-02 > ul > li{
     display:flex;
     flex-direction: column;
-    margin-right:30px;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
 }
 .menu-bx-02 > ul > li > a{
     padding:0;
@@ -140,6 +150,11 @@
     line-height:28px;
     padding-bottom:200px;
 }
+.menu-bx-02 > ul > li > a > img{
+    width:100%;
+    height:250px;
+    padding:10px;
+}
 /* hover */
 .drk-bg-box-01 .drk-bg-01 > a:hover{
     background:#f6f5ef;
@@ -148,4 +163,90 @@
 .drk-bg-box-02 .drk-bg-02 > a:hover{
     background:#4c4343;
     color:#f6f5ef;
+}
+@media screen and (max-width:1024px){
+.drk-bg-box-01 .drk-bg-01{
+    width:80%;
+}
+.drk-bg-box-01 .drk-bg-01 > p{
+    top:10%;
+    font-size: 14px;
+}
+.drk-bg-box-01 .drk-bg-01 > a{
+    top:40%;
+    font-size: 10px;
+}
+.drk-bg-box-02 .drk-bg-02{
+    width:80%;
+}
+.drk-bg-box-02 .drk-bg-02 > p{
+    top:10%;
+    font-size: 14px;
+}
+.drk-bg-box-02 .drk-bg-02 > a{
+    top:10%;
+    font-size: 10px;
+}
+
+}
+@media screen and (max-width:768px){
+    .menu-bx-01 > ul {
+        display:flex;
+        flex-wrap: wrap;
+        }
+        .menu-bx-02 > ul {
+        display:flex;
+        flex-wrap: wrap;
+        }
+        .drk-bg-box-01 .drk-bg-01{
+            width:100%;
+        }
+        .drk-bg-box-01 .drk-bg-01 > p{
+            top:5%;
+            font-size: 14px;
+        }
+        .drk-bg-box-01 .drk-bg-01 > a{
+            top:30%;
+            font-size: 10px;
+        }
+        .drk-bg-box-02 .drk-bg-02{
+            width:100%;
+        }
+        .drk-bg-box-02 .drk-bg-02 > p{
+            top:5%;
+            font-size: 14px;
+        }
+        .drk-bg-box-02 .drk-bg-02 > a{
+            top:5%;
+            font-size: 10px;
+        }
+}
+@media screen and (max-width:480px){
+    .drk-bg-box-01 .drk-bg-01{
+        width:100%;
+    }
+    .drk-bg-box-01 .drk-bg-01 > p{
+        top:5%;
+        font-size: 11px;
+    }
+    .drk-bg-box-01 .drk-bg-01 > a{
+        top:25%;
+        font-size: 6px;
+        padding:0px 5px 0px 5px;
+        border:1px solid #fff;
+    }
+    .drk-bg-box-02 .drk-bg-02{
+        width:100%;
+        line-height: 35px;
+    }
+    .drk-bg-box-02 .drk-bg-02 > p{
+        top:0%;
+        font-size: 11px;
+    }
+    .drk-bg-box-02 .drk-bg-02 > a{
+        top:-5%;
+        font-size: 6px;
+        padding:0px 5px 0px 5px;
+        border:1px solid #4c4343;
+    }
 }

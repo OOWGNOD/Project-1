@@ -1,10 +1,13 @@
 @import url(common.css);
-
+body{
+    min-height:1611px;
+}
 .ctt-1{
+    position:relative;
 }
 .ctt-1 .bg_img{
-    width:100%;
-    height:800px;
+    position:sticky;
+    height:80vh;
     background: url("../img/photo-1.jpg") fixed no-repeat;
     background-size:cover;
     background-position: center;
@@ -120,64 +123,67 @@
     background:white;
     width:100%;
     height:680px;
+    position:relative;
 
 }
+.favwrap-box-inner{
+    width:66.6666%;
+    margin:auto;
+}
 .favwarp-box .favwarp-inner{
-
     width:66.66%;
     display:flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin:0 auto;
     padding:90px 0 30px 0;
 }
-.favwarp > div > nav .fav-img-txt{
-    text-align: center;
+.favwarp > div > .favwrap-box-inner nav .fav-img-txt{
     line-height: 60px;
 }
-.favwarp > div > nav .fav-txt1{
+.favwarp > div > .favwrap-box-inner nav .fav-txt1{
     letter-spacing: 10px;
     font-weight: bold;
     color:#331515;
     font-size: 24px;
 }
-.favwarp > div > nav .fav-txt2{
+.favwarp > div > .favwrap-box-inner nav .fav-txt2{
+    font-size: 12px;
     letter-spacing:12px;
     font-weight: lighter;
     color:#292f4e;
 }
-.favwarp > div > ul{
+.favwarp > div > .favwrap-box-inner ul{
     display:flex;
-    justify-content: space-between;
-    width:70%;
-    margin:0 auto;
     text-align: center;
+    flex-wrap: no-wrap;
 }
-.favwarp > div > ul > li{
+.favwarp > div > .favwrap-box-inner ul > li{
+    padding:10px;
 }
-.favwarp > div > ul > li .fav-img-txt{
-    font-size:18px;
+.favwarp > div > .favwrap-box-inner ul > li .fav-img-txt{
+    font-size:14px;
     font-weight: bold;
     color:#331515;
     line-height: 60px;
 }
-.favwarp > div > ul > li .fav_link1{
-    font-size:16px;
+.favwarp > div > .favwrap-box-inner ul > li .fav_link1{
+    display:inline-block;
+    font-size:12px;
     font-weight: 700;
     color:#331515;
-    padding:5px 20px 5px 20px;
-    border:2px solid #331515;
+    padding:5px 10px 5px 10px;
+    border:1px solid #331515;
     border-radius: 20px;
 }
-.favwarp > div > ul > li .fav_link1:hover{
+.favwarp > div > .favwrap-box-inner ul > li .fav_link1:hover{
     background:#331515;
     color:#f6f5ef;
-    opacity: 0.8;
-    text-decoration: underline;
 }
 
-.favwarp > div > ul > li >img{
-    width:233px;
+.favwarp > div > .favwrap-box-inner ul > li >img{
+    width:100%;
     height:217px;
 }
 /* srch st */
@@ -194,13 +200,14 @@
 }
 
 .favwarp .srch_st .srch_st-inner > span{
-    position:relative;
-    left:30%;
+    position:absolute;
+    left:35%;
     bottom:150px;
     display:inline-block;
     color:#f6f5ef; 
     font-size: 14px;
     line-height: 24px;
+    transform: translateY(100%);
 }
 .favwarp .srch_st .srch_st-inner > span .st_link{
     color:#f6f5ef;
@@ -213,6 +220,120 @@
     background:#f6f5ef;
     color:#4c4343;
     text-decoration: underline;
+}
+@media screen and (max-width:1024px){
+.ctt-1 .bg_img{
+    height:55vh;
+}
+.ctt-1 .bg_img .bg_img-right{
+    width:45%;
+    right:2%;
+}
+.ctt-1 .bg_img .bg_img-left{
+    width:45%;
+    left:9%;
+    top:20%;
+}
+.ctt-1 > div > nav > p > a{
+    padding:0 3% 0 3%;
+    font-size: 1.2rem;
+    border:solid #4c4343 1px;
+    font-weight: 600;
+}
+}
+@media screen and (max-width:1191px){
+.favwarp{
+    max-height: 1560px;
+}
+.favwrap-box-inner{
+    background:#fff;
+    width:100%;
+}
+
+.favwarp > div > ul > li{
+}
+}
+@media screen and (max-width:768px){
+.event-bd .event-1{
+    width:90%;
+    justify-content: center;
+    align-items: center;
+}
+.event-1 > ul{
+    flex-wrap: wrap;
+
+}
+.event-1 > ul > li{
+    margin:0 auto;
+    transform: translateX(15%);
+}
+
+.event-1 > ul > li > a > img {
+    align-items: center;
+    width:66%;
+    margin: 20px 10px;
+}
+
+    .favwarp > div > .favwrap-box-inner ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+.favwarp > div > .favwrap-box-inner nav .fav-txt1{
+    font-size: 16px;
+}
+.favwarp > div > .favwrap-box-inner nav .fav-txt2{
+    font-size:9px;
+}
+
+}
+
+
+
+/* media 480 */
+@media screen and (max-width:480px){
+    
+.event-1 > ul > li > a > img {
+    align-items: center;
+    width:66%;
+    margin: 20px 10px;
+}
+    .ctt-1 .bg_img{
+        position:relative;
+        transform: translateY(7%);
+        background: url("../img/summerdrink3.png") no-repeat;
+        background-position: center;
+    }
+    .ctt-1 .bg_img .bg_img-left{
+        display:none;
+    }
+    .ctt-1 .bg_img .bg_img-right{
+        display:none;
+    }
+    .favwarp-box .favwarp-inner {
+        padding:0px;
+    }
+    .favwarp .srch_st{
+    display:none;
+    }
+    .favwarp > div > .favwrap-box-inner ul > li >img{
+        width:80%;
+        height:100%;
+    }
+    .favwarp > div > .favwrap-box-inner ul{
+        display:inline-flex;
+    }
+    .favwarp > div > .favwrap-box-inner ul > li{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        line-height: 10px;
+    }
+    .favwarp > div > .favwrap-box-inner ul > li:nth-child(5){
+        padding-bottom: 30px;
+    }
+
 }
 
 

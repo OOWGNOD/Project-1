@@ -9,60 +9,26 @@
     <link rel="stylesheet" type="text/css" href="../css/slick.css">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="../js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/common2.js"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
         </style>
 </head>
 <body>
     <header>
-        <div>
-            <h1><a href="index.html"><img src="../img/photo-1.png" alt="투썸"></a></h1>
-            <nav>
-                <a href="#"><img src="../img/burger-01.png" alt="버거"></a>
-                <ul class="spot">
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="enterprise.html">고객센터</a></li>
-                    <li><a href="enterprise.html">뉴스 및 공지</a></li>
-                </ul>
-                <ul class="spot2">
-                    <li>
-                        <a href="drink.html">Menu</a>
-                        <div>
-                            <a href="drink.html">음료</a>
-                            <a href="drink.html">디저트</a>
-                            <a href="drink.html">MD상품</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Find store</a>
-                        <div>
-                            <a href="#">매장찾기</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="enterprise.html">A Twosome Place</a>
-                        <div>
-                            <a href="enterprise.html">고객지원</a>
-                            <a href="enterprise.html">FaQ</a>
-                            <a href="enterprise.html">공지사항</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </header>
-    <article class="ctt-1">
+    <article class="ctt-2">
         <div class="bg_img"><img src="../img/summerdrink2.png"></div>
         </nav>
         <div class="bg_img2">
-                <img src="../img/sweet.png">
+                <img src="../img/sweet.jpg">
         </div>
     </article>
     <div class="drk-bg-box-01">
-        <nav  class="drk-bg-01">
-        <p>음료</p>
-        <p>투썸 플레이스의 특별한 음료를 줄겨보세요.</p>
+        <nav class="drk-bg-01">
+        <p>음료<br>
+        투썸 플레이스의 특별한 음료를 즐겨보세요.</p>
         <a href="#">자세히보기</a>
     </nav>
     </div>
@@ -142,7 +108,8 @@
                 스페니쉬 라떼 : 야외 활동이 많은<br> 스페인 목동들이 피곤함을 해소하기 위해 즐겨 마시던<br> 커피</P>
                 </li>
         </ul>
-    </div><div class="menu-bx-02">
+    </div>
+    <div class="menu-bx-02">
         <ul>
             <li><a href="#"><img src="../img/img_t_menu01.png"></a>
             <span class="menu-name2">
@@ -178,29 +145,38 @@
         </ul>
     </div>
     <footer>
-        <div class="ft-box">
-            <nav class="ft-inner">
-                <span>이용약관 | 개인정보처리방침 | 위치서비스 이용약관 | 이메일 수집거부 | 법적고지 
-                </span>
-                <span>
-                    서울특별시 중구 을지로 170, 8층(을지로4가, 을지로트윈타워) 투썸플레이스(주)<br>
-                    대표이사 : 이영상			고객센터 : 1577-4410		팩스 : 02-2058-6777<br>
-                    사업자등록번호 : 404-86-01054		개인정보보호책임자 : 장재호<br>
-                    대표이메일 : helpmaster@twosome.co.kr 
-                    </span>
-            </nav>
-    
-        </div>
+
     </footer>
 
     <script type="text/javascript">
         $(document).on('ready', function() {
-        $(".ctt-1").slick({
+        $(".ctt-2").slick({
+            slick:'article',
             arrows:true,
             dots: true,
             infinite: true,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [ // 반응형 웹 구현 옵션
+					{  
+						breakpoint: 960, //화면 사이즈 960px
+						settings: {
+							//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+							slidesToShow:1,
+                            autoplay : true,			// 자동 스크롤 사용 여부
+				            autoplaySpeed : 10000
+						} 
+					},
+					{ 
+						breakpoint: 768, //화면 사이즈 768px
+						settings: {	
+							//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+							slidesToShow:1,
+                            autoplay : true,			// 자동 스크롤 사용 여부
+				            autoplaySpeed : 10000 
+						} 
+					}
+				]
         });
         });
     
