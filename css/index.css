@@ -1,13 +1,18 @@
 @import url(common.css);
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 body{
     min-height:1611px;
 }
+
 .ctt-1{
     position:relative;
 }
 .ctt-1 .bg_img{
-    position:sticky;
-    height:80vh;
+    height:90vh;
     background: url("../img/photo-1.jpg") fixed no-repeat;
     background-size:cover;
     background-position: center;
@@ -26,8 +31,8 @@ body{
 .ctt-1 .bg_img .bg_img-left{
     position: absolute;
     left: 13%;
-    top:25%;
-    padding-top: 55px;
+    top:5%;
+    /* padding-top: 55px; */
     width: 40%;
     display: flex;
     justify-content: center;
@@ -44,32 +49,145 @@ body{
 .ctt-1 .bg_img .bg_img-left .text1{
     margin:20px 0 20px 0;
 }
+.bg_img-left{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.bg_img-left{
+	position: relative;
+	display: block;
+	margin: 0;
+	font-size: 4rem;
+	line-height: 1;
+	transform: translateY(6rem);
+	animation: up 500ms linear forwards;
+	z-index: 1;
+	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+	
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		width: 0px;
+		height: 1px;
+		left: 0;
+		background-color: rgba(0,0,0,0.2);
+		z-index: -1;
+	}
+	
+	&::before {
+		top: 1.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+	
+	&::after {
+		bottom: 0.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+
+}
+.bg_img-right{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.bg_img-right{
+	position: relative;
+	display: block;
+	margin: 0;
+	font-size: 4rem;
+	line-height: 1;
+	transform: translateY(6rem);
+	animation: up 500ms linear forwards;
+	z-index: 1;
+	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		width: 0px;
+		height: 1px;
+		left: 0;
+		background-color: rgba(0,0,0,0.2);
+		z-index: -1;
+	}
+	
+	&::before {
+		top: 1.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+	
+	&::after {
+		bottom: 0.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+	
+}
+
+.ctt-1{
+	font-size: 0;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 0.4rem;
+}
+
+@keyframes up {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+
+@keyframes draw {
+	
+	100% {
+		width: 100%;
+	}
+	
+}
 .ctt-1 > div > nav > p {
     width:100%;
 }
-.ctt-1 > div > nav > p > a{
-    display:inline-block;
-    font-size:1.5rem;
-    color:#4c4343;
-    border:solid #4c4343 2px;
-    border-radius: 20px;
-    padding:0 5% 0 5%;
-    font-weight: 800;
-
-}
-.ctt-1 > div > nav > p > a:hover{
-    background:#4c4343;
-    color:#f6f5ef;
-    text-decoration: underline;
-
-}
+    .ctt-1 > div > nav > p > a{
+        display: inline-block;
+        background: transparent;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 1rem;
+        letter-spacing: 0.6em;
+        color:#331515;
+        border-radius: 50px;
+        padding: 9px 40px 10px;
+        transition: all 0.7s ease-out;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.8), rgba(70, 70, 70, 0.8), rgba(126, 126, 126, 0), rgba(247, 247, 247, 0));
+        background-position: 1% 50%;
+        background-size: 300% 300%;
+        text-decoration: none;
+        margin: 0.625rem;
+        border: none;
+        border: 1px solid rgba(223,190,106,0.3);
+    }
+    
+    .ctt-1 > div > nav > p > a:hover{
+        color: #fff;
+        border: 1px solid rgba(223,190,106,0);
+        color: #fff;
+        background-position: 99% 50%;
+    }
     
 
 /* event bd */
 .event-bd{
     width:100%;
     margin:120px 0px 120px 0px;
-
 }
 .event-bd .event-1{
     display:flex;
@@ -99,17 +217,66 @@ body{
 .event-1 > ul{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;    
+    
 }
 .event-1 > ul > li{
+    position:relative;
+    z-index: 1;
 }
-.event-1 > ul > li > a {}
-.event-1 > ul > li > a > img {
+.event-1 > ul > li > a {
 
+}
+.event-1 > ul > li > a > img {
+    position: relative;
+    /* z-index: 2; */
     width:80%;
     margin:60px 30px;
 }
+.event-1 > ul > li > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.4);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.event-1 > ul > li > a:hover::after {
+    opacity: 0.9;
+}
 
+.event-1 > ul > li > a > img::after,
+.event-1 > ul > li > a > img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%, -100%);
+    width: 0%;
+    height: 0%;
+    border-color: #331515;
+    border-width: 12px;
+    transition: .5s;
+}
+.event-1 > ul > li > a > img::after {
+    height: 100%;
+    border-style: solid none;
+}
+.event-1 > ul > li > a > img::before {
+    width: 80%;
+    border-style: none solid;
+}
+.event-1 > ul > li > a:hover .event-1 > ul > li > a > img::after,
+.event-1 > ul > li > a:hover .event-1 > ul > li > a > img::before {
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+}
 /* fav */
 .favwarp{
     background:url("../img/stk_bg.jpg") transparent center center fixed no-repeat;
@@ -232,13 +399,13 @@ body{
 .ctt-1 .bg_img .bg_img-left{
     width:45%;
     left:9%;
-    top:20%;
+    top:-30%;
 }
 .ctt-1 > div > nav > p > a{
-    padding:0 3% 0 3%;
-    font-size: 1.2rem;
+    padding:0 2% 0 2%;
+    font-size: 0.65rem;
     border:solid #4c4343 1px;
-    font-weight: 600;
+    font-weight: 100;
 }
 }
 @media screen and (max-width:1191px){

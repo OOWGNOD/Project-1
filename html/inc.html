@@ -1,10 +1,10 @@
 <header>
-    <div>
+    <div class="main-header">
         <h1><a href="../index.html"><img src="../img/bi_img_text.svg" alt="투썸"></a></h1>
         <nav>
             <ul class="spot">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
+                <li><a href="popup.html">로그인</a></li>
+                <li><a href="popup.html">회원가입</a></li>
                 <li><a href="enterprise.html">고객센터</a></li>
                 <li><a href="enterprise.html">뉴스 및 공지</a></li>
             </ul>
@@ -18,9 +18,9 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">Find store</a>
+                    <a href="https://map.naver.com/v5/search/%ED%88%AC%EC%8D%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4?c=14149059.5837495,4489608.7664716,15,0,0,0,dh">Find store</a>
                     <div>
-                        <a href="#">매장찾기</a>
+                        <a href="https://map.naver.com/v5/search/%ED%88%AC%EC%8D%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4?c=14149059.5837495,4489608.7664716,15,0,0,0,dh">매장찾기</a>
                     </div>
                 </li>
                 <li>
@@ -33,15 +33,20 @@
                 </li>
             </ul>
         </nav>
-        <input class="burger-check" type="checkbox" id="burger-check" />
-        <label class="burger-icon" for="burger-check"><span class="burger-sticks"></span></label>
-        <div class="menu">
-            <div style="width: 1280px;">
-                <a href="drink.html">Menu</a>
-                <a href="#">Find store</a>
-                <a href="enterprise.html">A Twosome Place</a>
+        <nav class="bg-nav">
+            <div class="container">
+                <input id="responsive-menu" type="checkbox">
+                <label for="responsive-menu"><span id="menu-icon" class="menu-icon2"></span></label>
+                <div id="overlay"></div>
+                <ul>
+                    <li><a href="drink.html">Menu</a></li>
+                    <li><a href="popup.html">로그인</a></li>
+                    <li><a href="popup.html">회원가입</a></li>
+                    <li><a href="enterprise.html">고객센터</a></li>
+                    <li><a href="enterprise.html">뉴스 및 공지</a></li>
+                </ul>
             </div>
-          </div>
+        </nav>
     </div>
 </header>
 <footer>
