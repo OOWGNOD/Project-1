@@ -5,7 +5,7 @@ function init(){
     let xhr,res,tagList='';
 
     xhr = new XMLHttpRequest();
-    xhr.open('get','../json/data.json');  /* get, post */
+    xhr.open('get','../data.json');  /* get, post */
     xhr.send(null);
     xhr.onload = function(){
 
