@@ -403,7 +403,7 @@ body{
 .ctt-1 > div > nav > p > a{
     padding:0 2% 0 2%;
     font-size: 0.65rem;
-    border:solid #4c4343 1px;
+    /* border:solid #4c4343 1px; */
     font-weight: 100;
 }
 }
