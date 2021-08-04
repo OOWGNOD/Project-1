@@ -282,8 +282,8 @@ body{
     background:url("../img/stk_bg.jpg") transparent center center fixed no-repeat;
     background-size:cover;
     height:1560px;
-    width:100%;
-    
+    width:100%; 
+    padding-top: 200px;   
 }
 .favwarp-box{
     display:block;
@@ -291,7 +291,6 @@ body{
     width:100%;
     height:680px;
     position:relative;
-
 }
 .favwrap-box-inner{
     width:66.6666%;
@@ -357,7 +356,7 @@ body{
 .favwarp .srch_st{
     height:200px;
     position:relative;
-    top:680px;
+    top:480px;
 }
 .favwarp .srch_st .srch-bg{
     height:200px;
